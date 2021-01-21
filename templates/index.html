@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="static/stylesheet.css"/>
+	</head>
+	<body>
+		{% for single_file in result %}
+		<div class='single_file_element'>
+			<div class='file_text_top'>
+				<h1 class='name'>{{ single_file.name }}</h1>
+				<h1 class='time'>{{ single_file.time }}</h1>
+			</div>
+			<div class='file_text_center'>
+				<a href='{{single_file.location}}'><h1 class='content'>{{ single_file.filename }}</h1></a>
+				</div>
+			</div>
+		{% endfor %}
+	</body>
+</html>
